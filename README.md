@@ -7,3 +7,5 @@ Version 5: twenty themed animated enemies, stronger bosses with rage patterns, a
 Offline: first open online and wait for the ready indicator. All code, JSON, sprites and synthesized audio are local and cached by the service worker. Browser cache removal requires another online visit. Co-op requires an external server and remains unconfigured on Pages.
 
 Audio starts after interaction; effects and music volumes are separate. Old saves retain their score and current location; subsequent thresholds use 10,000 points.
+
+При каждом обновлении добавлять описание изменений в патчноут главного меню (index.html), обновлять версию ресурсов и офлайн-кэша. Правила 1.10: два уникальных босса на локацию, появления на 3000/9000 очков; переход при убийстве второго босса после достижения 10000 очков.

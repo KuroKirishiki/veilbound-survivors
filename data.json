@@ -564,14 +564,15 @@
         "name": "Вожак стаи",
         "type": "mini",
         "hp": 480.0,
-        "speed": 51,
+        "speed": 89,
         "damage": 27,
         "score": 20,
         "xp": 75,
         "sprite": 7,
         "form": 3,
         "theme": 0,
-        "ranged": false
+        "ranged": false,
+        "animal": true
       },
       {
         "name": "Лесной охотник",
@@ -824,14 +825,15 @@
         "name": "Крылатый охотник",
         "type": "normal",
         "hp": 129.0,
-        "speed": 59,
+        "speed": 86,
         "damage": 15,
         "score": 5,
         "xp": 13,
         "sprite": 5,
         "form": 1,
         "theme": 4,
-        "ranged": false
+        "ranged": false,
+        "animal": true
       },
       {
         "name": "Культист пустоты",
@@ -876,6 +878,148 @@
         "weaponKind": "bow",
         "shotKind": "void",
         "atlasForm": 0
+      }
+    ]
+  ],
+  "bossPairs": [
+    [
+      {
+        "name": "Хранитель корней",
+        "bossIndex": 0,
+        "bossArt": 0,
+        "attack": "roots",
+        "hp": 14000,
+        "speed": 48,
+        "damage": 32,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 8,
+        "type": "boss"
+      },
+      {
+        "name": "Лунный клык",
+        "bossIndex": 1,
+        "bossArt": 1,
+        "attack": "charge",
+        "hp": 18000,
+        "speed": 95,
+        "damage": 38,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 8,
+        "type": "boss"
+      }
+    ],
+    [
+      {
+        "name": "Гидра болот",
+        "bossIndex": 0,
+        "bossArt": 2,
+        "attack": "venomFan",
+        "hp": 14000,
+        "speed": 70,
+        "damage": 32,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 9,
+        "type": "boss"
+      },
+      {
+        "name": "Король грибных топей",
+        "bossIndex": 1,
+        "bossArt": 3,
+        "attack": "sporeRing",
+        "hp": 18000,
+        "speed": 48,
+        "damage": 38,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 9,
+        "type": "boss"
+      }
+    ],
+    [
+      {
+        "name": "Ледяной страж",
+        "bossIndex": 0,
+        "bossArt": 4,
+        "attack": "iceCross",
+        "hp": 14000,
+        "speed": 48,
+        "damage": 32,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 10,
+        "type": "boss"
+      },
+      {
+        "name": "Королева изморози",
+        "bossIndex": 1,
+        "bossArt": 5,
+        "attack": "frostRain",
+        "hp": 18000,
+        "speed": 48,
+        "damage": 38,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 10,
+        "type": "boss"
+      }
+    ],
+    [
+      {
+        "name": "Владыка пепла",
+        "bossIndex": 0,
+        "bossArt": 6,
+        "attack": "lavaWaves",
+        "hp": 14000,
+        "speed": 48,
+        "damage": 32,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 11,
+        "type": "boss"
+      },
+      {
+        "name": "Пылающий феникс",
+        "bossIndex": 1,
+        "bossArt": 7,
+        "attack": "phoenixSweep",
+        "hp": 18000,
+        "speed": 75,
+        "damage": 38,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 11,
+        "type": "boss"
+      }
+    ],
+    [
+      {
+        "name": "Дракон бездны",
+        "bossIndex": 0,
+        "bossArt": 8,
+        "attack": "voidSpiral",
+        "hp": 14000,
+        "speed": 80,
+        "damage": 32,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 12,
+        "type": "boss"
+      },
+      {
+        "name": "Оракул пустоты",
+        "bossIndex": 1,
+        "bossArt": 9,
+        "attack": "oracleLances",
+        "hp": 18000,
+        "speed": 48,
+        "damage": 38,
+        "score": 1000,
+        "xp": 400,
+        "sprite": 12,
+        "type": "boss"
       }
     ]
   ]
