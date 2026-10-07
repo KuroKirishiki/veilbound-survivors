@@ -14,3 +14,22 @@ button:disabled,select:disabled{opacity:.55;cursor:wait}
 .patchLink{display:inline-block;margin-top:18px;color:#d4bd80;text-decoration:underline;text-underline-offset:4px}
 
 .pauseSkills{margin-top:24px;border-top:1px solid #ffffff22;padding-top:15px;max-height:32vh;overflow:auto}.pauseSkill{display:grid;gap:5px;padding:10px 0;border-bottom:1px solid #ffffff12}.pauseSkill span{font-size:12px}.pauseSkill small{font-size:10px}
+
+/* Mobile controls and safe areas, including landscape phones. */
+#game{height:100dvh;overflow:hidden;touch-action:none;overscroll-behavior:none}
+#canvas{touch-action:none}
+.potionButton{position:absolute;right:22px;bottom:145px;z-index:4;min-height:48px;padding:12px 18px;border-radius:12px;border:1px solid #85b48b;background:#17291ee8;color:#c3e8bb;font:600 13px Arial;touch-action:manipulation}
+.potionButton:disabled{opacity:.5}
+#dialog{max-height:calc(100dvh - 40px);overflow-y:auto;overscroll-behavior:contain}
+@media (pointer:coarse),(max-width:700px){
+ #menu header{padding:16px;gap:8px;flex-wrap:wrap}#menu main{padding:20px 16px;gap:26px}.edition{display:none}
+ button,select,.patchLink{min-height:44px}#heroCards{gap:12px}.hero{min-width:0}#dialog{padding:20px;max-height:calc(100dvh - 24px)}#overlay{padding:12px}
+ .hud{top:max(12px,env(safe-area-inset-top));left:max(12px,env(safe-area-inset-left));right:max(12px,env(safe-area-inset-right));gap:12px}.playerhud{width:min(42vw,170px)}.scorehud{padding-right:48px}.scorehud b{font-size:23px}.scorehud button{top:0;min-width:44px;min-height:44px}.locationhud{display:none}
+ #joystick,#aimJoystick{display:block;bottom:calc(48px + env(safe-area-inset-bottom));width:105px;height:105px}#joystick{left:max(18px,env(safe-area-inset-left))}#aimJoystick{right:max(18px,env(safe-area-inset-right))}
+ .skillButton,.potionButton{position:absolute;bottom:calc(188px + env(safe-area-inset-bottom));width:calc(50% - 26px);max-width:190px;min-height:52px;padding:10px;font-size:12px;white-space:normal}.skillButton{right:max(18px,env(safe-area-inset-right))}.potionButton{left:max(18px,env(safe-area-inset-left));right:auto}
+ .equipment{left:12px;right:12px;max-width:none;bottom:calc(255px + env(safe-area-inset-bottom));font-size:9px;text-align:center;pointer-events:none}.xpbar{height:20px;padding-bottom:env(safe-area-inset-bottom);box-sizing:content-box}
+ #bossHud{top:82px;width:min(76vw,420px)}#toast{max-width:90vw;font-size:13px}#netStatus{max-width:90vw}
+}
+@media (max-height:500px) and (pointer:coarse){
+ #joystick,#aimJoystick{bottom:calc(35px + env(safe-area-inset-bottom))}.skillButton,.potionButton{bottom:calc(160px + env(safe-area-inset-bottom));min-height:44px;width:150px}.equipment{bottom:25px;left:150px;right:150px;font-size:8px}#bossHud{top:68px}#dialog h2{font-size:26px}
+}
