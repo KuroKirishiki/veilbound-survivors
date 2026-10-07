@@ -12,3 +12,5 @@ button:disabled,select:disabled{opacity:.55;cursor:wait}
 .patchnotes{margin:24px clamp(20px,5vw,80px);padding:28px;border:1px solid #78906455;border-radius:14px;background:#142018;color:#d4dbc8}.patchnotes h2{margin:12px 0;font-size:22px}.patchnotes li{margin:9px 0;line-height:1.5}.patchnotes summary{cursor:pointer;color:#bdd29b;padding:12px 0}.patchnotes ul{padding-left:22px}
 
 .patchLink{display:inline-block;margin-top:18px;color:#d4bd80;text-decoration:underline;text-underline-offset:4px}
+
+.pauseSkills{margin-top:24px;border-top:1px solid #ffffff22;padding-top:15px;max-height:32vh;overflow:auto}.pauseSkill{display:grid;gap:5px;padding:10px 0;border-bottom:1px solid #ffffff12}.pauseSkill span{font-size:12px}.pauseSkill small{font-size:10px}

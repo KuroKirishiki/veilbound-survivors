@@ -245,12 +245,47 @@
       "description": "Фиолетовые сферы пробивают 2 цели. Взрыв радиусом 60, урон +20%.",
       "icon": "◉",
       "weapon": true
+    },
+    {
+      "id": "regen",
+      "name": "Живые корни",
+      "type": "Способность",
+      "description": "Постепенно восстанавливает здоровье.",
+      "icon": "❧"
+    },
+    {
+      "id": "magnet",
+      "name": "Зов кристаллов",
+      "type": "Способность",
+      "description": "Увеличивает радиус притяжения опыта.",
+      "icon": "✧"
+    },
+    {
+      "id": "focus",
+      "name": "Поток маны",
+      "type": "Способность",
+      "description": "Сокращает ожидание активной способности.",
+      "icon": "◌"
+    },
+    {
+      "id": "skin",
+      "name": "Каменная кожа",
+      "type": "Способность",
+      "description": "Дополнительная защита от любого урона.",
+      "icon": "⬡"
+    },
+    {
+      "id": "precision",
+      "name": "Верный выстрел",
+      "type": "Способность",
+      "description": "Даёт шанс двойного урона снаряда.",
+      "icon": "⌖"
     }
   ],
   "progression": {
-    "initialXp": 55,
+    "initialXp": 48,
     "growth": 1.17,
-    "increment": 12
+    "increment": 10
   },
   "difficulties": [
     {
@@ -589,6 +624,22 @@
         "weaponKind": "bow",
         "shotKind": "arrow",
         "atlasForm": 0
+      },
+      {
+        "name": "Шипастый друид",
+        "type": "rare",
+        "hp": 169.0,
+        "speed": 65.7,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 0,
+        "ranged": false,
+        "weaponKind": "staff",
+        "shotKind": "thorn",
+        "aoe": true
       }
     ],
     [
@@ -661,6 +712,22 @@
         "weaponKind": "bow",
         "shotKind": "venom",
         "atlasForm": 0
+      },
+      {
+        "name": "Чумной алхимик",
+        "type": "rare",
+        "hp": 199.42000000000002,
+        "speed": 65.7,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 1,
+        "ranged": false,
+        "weaponKind": "staff",
+        "shotKind": "venom",
+        "aoe": true
       }
     ],
     [
@@ -733,6 +800,22 @@
         "weaponKind": "bow",
         "shotKind": "ice",
         "atlasForm": 0
+      },
+      {
+        "name": "Ледяной заклинатель",
+        "type": "rare",
+        "hp": 229.83999999999997,
+        "speed": 65.7,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 2,
+        "ranged": false,
+        "weaponKind": "staff",
+        "shotKind": "ice",
+        "aoe": true
       }
     ],
     [
@@ -805,6 +888,22 @@
         "weaponKind": "bow",
         "shotKind": "fire",
         "atlasForm": 0
+      },
+      {
+        "name": "Подрывник пепла",
+        "type": "rare",
+        "hp": 260.26000000000005,
+        "speed": 65.7,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 3,
+        "ranged": false,
+        "weaponKind": "staff",
+        "shotKind": "fire",
+        "aoe": true
       }
     ],
     [
@@ -878,6 +977,22 @@
         "weaponKind": "bow",
         "shotKind": "void",
         "atlasForm": 0
+      },
+      {
+        "name": "Разрыватель пустоты",
+        "type": "rare",
+        "hp": 290.68,
+        "speed": 65.7,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 4,
+        "ranged": false,
+        "weaponKind": "staff",
+        "shotKind": "void",
+        "aoe": true
       }
     ]
   ],
