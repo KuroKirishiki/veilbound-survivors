@@ -1,6 +1,6 @@
 {
   "title": "VEILBOUND",
-  "locationStep": 5000,
+  "locationStep": 10000,
   "heroes": [
     {
       "id": "elf",
@@ -16,7 +16,12 @@
       "armor": "Кожаный доспех",
       "color": "#9acb93",
       "sprite": 0,
-      "pierce": 2
+      "pierce": 2,
+      "active": {
+        "name": "Лунный залп",
+        "cooldown": 14,
+        "description": "Девять пробивающих стрел веером."
+      }
     },
     {
       "id": "mage",
@@ -32,7 +37,12 @@
       "armor": "Мантия ученика",
       "color": "#9bbbe5",
       "sprite": 1,
-      "splash": 75
+      "splash": 75,
+      "active": {
+        "name": "Звёздный взрыв",
+        "cooldown": 20,
+        "description": "Магический взрыв вокруг героя."
+      }
     },
     {
       "id": "rogue",
@@ -48,7 +58,12 @@
       "armor": "Теневой плащ",
       "color": "#c6a0d7",
       "sprite": 2,
-      "crit": 4
+      "crit": 4,
+      "active": {
+        "name": "Теневой рывок",
+        "cooldown": 12,
+        "description": "Рывок по прицелу, неуязвимость и удар рядом."
+      }
     },
     {
       "id": "satoru",
@@ -65,7 +80,12 @@
       "color": "#c290ff",
       "sprite": 16,
       "pierce": 2,
-      "splash": 60
+      "splash": 60,
+      "active": {
+        "name": "Полая сфера",
+        "cooldown": 24,
+        "description": "Три мощные фиолетовые сферы по прицелу."
+      }
     }
   ],
   "locations": [
@@ -496,5 +516,277 @@
   "loot": {
     "healChance": 0.03,
     "bossHealChance": 0.35
-  }
+  },
+  "enemyRosters": [
+    [
+      {
+        "name": "Лесной разбойник",
+        "type": "normal",
+        "hp": 42.0,
+        "speed": 90,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 0,
+        "ranged": false
+      },
+      {
+        "name": "Колючий древень",
+        "type": "normal",
+        "hp": 75.0,
+        "speed": 59,
+        "damage": 15,
+        "score": 5,
+        "xp": 13,
+        "sprite": 5,
+        "form": 1,
+        "theme": 0,
+        "ranged": false
+      },
+      {
+        "name": "Лесная ведьма",
+        "type": "rare",
+        "hp": 130.0,
+        "speed": 73,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 0,
+        "ranged": true
+      },
+      {
+        "name": "Вожак стаи",
+        "type": "mini",
+        "hp": 480.0,
+        "speed": 51,
+        "damage": 27,
+        "score": 20,
+        "xp": 75,
+        "sprite": 7,
+        "form": 3,
+        "theme": 0,
+        "ranged": false
+      }
+    ],
+    [
+      {
+        "name": "Болотный слизень",
+        "type": "normal",
+        "hp": 49.559999999999995,
+        "speed": 90,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 1,
+        "ranged": false
+      },
+      {
+        "name": "Утопленник",
+        "type": "normal",
+        "hp": 88.5,
+        "speed": 59,
+        "damage": 15,
+        "score": 5,
+        "xp": 13,
+        "sprite": 5,
+        "form": 1,
+        "theme": 1,
+        "ranged": false
+      },
+      {
+        "name": "Ядовитый шаман",
+        "type": "rare",
+        "hp": 153.4,
+        "speed": 73,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 1,
+        "ranged": true
+      },
+      {
+        "name": "Страж трясины",
+        "type": "mini",
+        "hp": 566.4,
+        "speed": 51,
+        "damage": 27,
+        "score": 20,
+        "xp": 75,
+        "sprite": 7,
+        "form": 3,
+        "theme": 1,
+        "ranged": false
+      }
+    ],
+    [
+      {
+        "name": "Ледяной скелет",
+        "type": "normal",
+        "hp": 57.12,
+        "speed": 90,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 2,
+        "ranged": false
+      },
+      {
+        "name": "Морозный рыцарь",
+        "type": "normal",
+        "hp": 101.99999999999999,
+        "speed": 59,
+        "damage": 15,
+        "score": 5,
+        "xp": 13,
+        "sprite": 5,
+        "form": 1,
+        "theme": 2,
+        "ranged": false
+      },
+      {
+        "name": "Снежная колдунья",
+        "type": "rare",
+        "hp": 176.79999999999998,
+        "speed": 73,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 2,
+        "ranged": true
+      },
+      {
+        "name": "Голем руин",
+        "type": "mini",
+        "hp": 652.8,
+        "speed": 51,
+        "damage": 27,
+        "score": 20,
+        "xp": 75,
+        "sprite": 7,
+        "form": 3,
+        "theme": 2,
+        "ranged": false
+      }
+    ],
+    [
+      {
+        "name": "Пепельный бес",
+        "type": "normal",
+        "hp": 64.68,
+        "speed": 90,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 3,
+        "ranged": false
+      },
+      {
+        "name": "Огненный воин",
+        "type": "normal",
+        "hp": 115.5,
+        "speed": 59,
+        "damage": 15,
+        "score": 5,
+        "xp": 13,
+        "sprite": 5,
+        "form": 1,
+        "theme": 3,
+        "ranged": false
+      },
+      {
+        "name": "Пиромант",
+        "type": "rare",
+        "hp": 200.20000000000002,
+        "speed": 73,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 3,
+        "ranged": true
+      },
+      {
+        "name": "Лавовый громила",
+        "type": "mini",
+        "hp": 739.2,
+        "speed": 51,
+        "damage": 27,
+        "score": 20,
+        "xp": 75,
+        "sprite": 7,
+        "form": 3,
+        "theme": 3,
+        "ranged": false
+      }
+    ],
+    [
+      {
+        "name": "Тень бездны",
+        "type": "normal",
+        "hp": 72.24,
+        "speed": 90,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 4,
+        "ranged": false
+      },
+      {
+        "name": "Крылатый охотник",
+        "type": "normal",
+        "hp": 129.0,
+        "speed": 59,
+        "damage": 15,
+        "score": 5,
+        "xp": 13,
+        "sprite": 5,
+        "form": 1,
+        "theme": 4,
+        "ranged": false
+      },
+      {
+        "name": "Культист пустоты",
+        "type": "rare",
+        "hp": 223.6,
+        "speed": 73,
+        "damage": 18,
+        "score": 10,
+        "xp": 24,
+        "sprite": 6,
+        "form": 2,
+        "theme": 4,
+        "ranged": true
+      },
+      {
+        "name": "Рыцарь разлома",
+        "type": "mini",
+        "hp": 825.6,
+        "speed": 51,
+        "damage": 27,
+        "score": 20,
+        "xp": 75,
+        "sprite": 7,
+        "form": 3,
+        "theme": 4,
+        "ranged": false
+      }
+    ]
+  ]
 }

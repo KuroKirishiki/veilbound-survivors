@@ -1,18 +1,9 @@
-# Veilbound — GitHub Pages
+# Veilbound
 
-Готовая статическая версия игры: четыре героя, пять миров, три сложности, прокачка, сохранения и управление на телефоне.
+Play: https://kurokirishiki.github.io/veilbound-survivors/
 
-## Публикация
-1. Создайте публичный репозиторий `veilbound-survivors`.
-2. Загрузите содержимое этого архива в корень ветки `main`. Файл `index.html` должен быть в корне.
-3. В Settings → Pages выберите Deploy from a branch, main, / (root), Save.
-4. Адрес появится в Settings → Pages после завершения публикации.
+Version 5: twenty themed animated enemies, stronger bosses with rage patterns, active skills (Space or touch button), four upgrade rarities, weapon audio and procedural background music, richer terrain, worlds every 10,000 points. Horde grows by stage and every five character levels, capped at 300 enemies for device performance.
 
-## Кооператив
-GitHub Pages не запускает серверный код. До подключения отдельного сервера кооператив показывает объяснение.
-В `config.js` установите `window.VEILBOUND_COOP_API` в HTTPS-адрес API сервера.
-Сервер должен поддерживать текущий протокол игры и CORS для адреса GitHub Pages, включая Content-Type и Authorization, и OPTIONS-запросы.
-Текущий сервер игры использует Cloudflare D1. Для обычного VPS требуется адаптация хранилища и HTTP-сервера. Одной загрузки файлов на VPS недостаточно.
+Offline: first open online and wait for the ready indicator. All code, JSON, sprites and synthesized audio are local and cached by the service worker. Browser cache removal requires another online visit. Co-op requires an external server and remains unconfigured on Pages.
 
-## Сохранения
-Сохранения остаются в браузере и привязаны к адресу сайта. Сохранения прежнего адреса автоматически не переносятся.
+Audio starts after interaction; effects and music volumes are separate. Old saves retain their score and current location; subsequent thresholds use 10,000 points.
