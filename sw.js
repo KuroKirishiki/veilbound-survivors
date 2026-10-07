@@ -1,6 +1,6 @@
-const CACHE='veilbound-offline-v8';
-const FILES=['./','index.html','style.css?v=8','world.js?v=8','animations.js?v=8','network.js?v=8','game.js?v=8','expansion.js?v=8','enemy-atlas.js?v=8','motion.js?v=8','offline.js?v=8','config.js','data.json?v=8','atlas.png','heroes-animation.png','environment.png','sorcerer-animation.png'];
+const CACHE='veilbound-offline-v9';
+const FILES=['./','index.html','style.css?v=9','world.js?v=9','animations.js?v=9','network.js?v=9','game.js?v=9','expansion.js?v=9','enemy-atlas.js?v=9','motion.js?v=9','combat-motion.js?v=9','offline.js?v=9','config.js','data.json?v=9','atlas.png','heroes-animation.png','environment.png','sorcerer-animation.png'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{let c=await caches.open(CACHE);await c.addAll(FILES);await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(let k of await caches.keys())if(k.startsWith('veilbound-offline-')&&k!==CACHE)await caches.delete(k);await self.clients.claim();for(let c of await self.clients.matchAll())c.postMessage('OFFLINE_READY')})()));
-self.addEventListener('message',e=>{if(e.data==='CHECK_READY')e.waitUntil((async()=>{let c=await caches.open(CACHE);if(await c.match('data.json?v=8'))e.source?.postMessage('OFFLINE_READY')})())});
+self.addEventListener('message',e=>{if(e.data==='CHECK_READY')e.waitUntil((async()=>{let c=await caches.open(CACHE);if(await c.match('data.json?v=9'))e.source?.postMessage('OFFLINE_READY')})())});
 self.addEventListener('fetch',e=>{let u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==self.location.origin)return;e.respondWith((async()=>{let c=await caches.open(CACHE);if(e.request.mode==='navigate'){try{return await fetch(e.request)}catch{return await c.match('./')}}return await c.match(e.request)||fetch(e.request)})())});
