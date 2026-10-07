@@ -33,3 +33,5 @@ button:disabled,select:disabled{opacity:.55;cursor:wait}
 @media (max-height:500px) and (pointer:coarse){
  #joystick,#aimJoystick{bottom:calc(35px + env(safe-area-inset-bottom))}.skillButton,.potionButton{bottom:calc(160px + env(safe-area-inset-bottom));min-height:44px;width:150px}.equipment{bottom:25px;left:150px;right:150px;font-size:8px}#bossHud{top:68px}#dialog h2{font-size:26px}
 }
+.hero:nth-child(5){background:linear-gradient(170deg,#3c3c27,#132f2b)}.hero:nth-child(6){background:linear-gradient(170deg,#473341,#201d2a)}
+#activeSkill,#potionButton{touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}

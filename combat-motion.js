@@ -3,7 +3,7 @@
 const releaseShot=shoot,releaseSkill=activeSkill;
 function shotPreparation(s){return Math.min(.28,Math.max(.07,s.cooldown*.32))}
 shoot=function(){let s=state;if(s.down||s.shotWind>0||s.skillWind>0)return;if(!aim.active&&!touchAim.active&&!nearestEnemy())return;s.shotDuration=shotPreparation(s);s.shotWind=s.shotDuration;s.shotAngle=aimDirection()};
-activeSkill=function(){if(mode!=='playing'||!state||state.down||netGuest()||state.skillCooldown>0||state.skillWind>0)return;state.skillWind=.28;state.shotWind=0;state.shotAngle=aimDirection()};
+activeSkill=function(){if(mode!=='playing'||!state||state.down||netGuest()||state.skillCooldown>0||state.skillWind>0||state.wolfForm>0)return;state.skillWind=.28;state.shotWind=0;state.shotAngle=aimDirection()};
 skillButton.onclick=activeSkill;
 const phaseUpdate=update;
 update=function(dt){let s=state;if(s.shotWind>0){s.shotWind=Math.max(0,s.shotWind-dt);if(s.shotWind===0)releaseShot()}if(s.skillWind>0){s.skillWind=Math.max(0,s.skillWind-dt);if(s.skillWind===0)releaseSkill()}phaseUpdate(dt)};
