@@ -556,7 +556,9 @@
         "sprite": 6,
         "form": 2,
         "theme": 0,
-        "ranged": true
+        "ranged": true,
+        "weaponKind": "staff",
+        "shotKind": "thorn"
       },
       {
         "name": "Вожак стаи",
@@ -570,6 +572,22 @@
         "form": 3,
         "theme": 0,
         "ranged": false
+      },
+      {
+        "name": "Лесной охотник",
+        "type": "normal",
+        "hp": 50.4,
+        "speed": 76.5,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 0,
+        "ranged": true,
+        "weaponKind": "bow",
+        "shotKind": "arrow",
+        "atlasForm": 0
       }
     ],
     [
@@ -610,7 +628,9 @@
         "sprite": 6,
         "form": 2,
         "theme": 1,
-        "ranged": true
+        "ranged": true,
+        "weaponKind": "staff",
+        "shotKind": "venom"
       },
       {
         "name": "Страж трясины",
@@ -624,6 +644,22 @@
         "form": 3,
         "theme": 1,
         "ranged": false
+      },
+      {
+        "name": "Болотный метатель",
+        "type": "normal",
+        "hp": 59.471999999999994,
+        "speed": 76.5,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 1,
+        "ranged": true,
+        "weaponKind": "bow",
+        "shotKind": "venom",
+        "atlasForm": 0
       }
     ],
     [
@@ -664,7 +700,9 @@
         "sprite": 6,
         "form": 2,
         "theme": 2,
-        "ranged": true
+        "ranged": true,
+        "weaponKind": "staff",
+        "shotKind": "ice"
       },
       {
         "name": "Голем руин",
@@ -678,6 +716,22 @@
         "form": 3,
         "theme": 2,
         "ranged": false
+      },
+      {
+        "name": "Ледяной арбалетчик",
+        "type": "normal",
+        "hp": 68.544,
+        "speed": 76.5,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 2,
+        "ranged": true,
+        "weaponKind": "bow",
+        "shotKind": "ice",
+        "atlasForm": 0
       }
     ],
     [
@@ -718,7 +772,9 @@
         "sprite": 6,
         "form": 2,
         "theme": 3,
-        "ranged": true
+        "ranged": true,
+        "weaponKind": "staff",
+        "shotKind": "fire"
       },
       {
         "name": "Лавовый громила",
@@ -732,6 +788,22 @@
         "form": 3,
         "theme": 3,
         "ranged": false
+      },
+      {
+        "name": "Пепельный стрелок",
+        "type": "normal",
+        "hp": 77.616,
+        "speed": 76.5,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 3,
+        "ranged": true,
+        "weaponKind": "bow",
+        "shotKind": "fire",
+        "atlasForm": 0
       }
     ],
     [
@@ -772,7 +844,9 @@
         "sprite": 6,
         "form": 2,
         "theme": 4,
-        "ranged": true
+        "ranged": true,
+        "weaponKind": "staff",
+        "shotKind": "void"
       },
       {
         "name": "Рыцарь разлома",
@@ -786,6 +860,22 @@
         "form": 3,
         "theme": 4,
         "ranged": false
+      },
+      {
+        "name": "Лучник бездны",
+        "type": "normal",
+        "hp": 86.68799999999999,
+        "speed": 76.5,
+        "damage": 10,
+        "score": 5,
+        "xp": 10,
+        "sprite": 4,
+        "form": 0,
+        "theme": 4,
+        "ranged": true,
+        "weaponKind": "bow",
+        "shotKind": "void",
+        "atlasForm": 0
       }
     ]
   ]
